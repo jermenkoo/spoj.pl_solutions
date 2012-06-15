@@ -1,13 +1,11 @@
 #include <bitset>
 #include <cstdio>
-#include <iostream>
 #define MAXN 3000000
+
 using namespace std;
 
 int phi[MAXN + 1], prime[MAXN/10], sz;
 bitset <MAXN + 1> mark;
-
-int i;
 
 int main() {
     for (int i = 2; i <= MAXN; i++ ){
@@ -21,7 +19,7 @@ int main() {
                 phi[i*prime[j]] = phi[i]*prime[j];
                 break;
             }
-            else phi[i*prime[j]] = phi[i]*(prime[j]-1 );
+            else phi[i*prime[j]] = phi[i]*(prime[j]-1);
         }
     }
 

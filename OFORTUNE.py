@@ -23,7 +23,6 @@ for _ in range(int(input())):
         oper[i][2] = int(oper[i][2])
         if oper[i][0] == 0:
             results.append(_simple(amount, years, oper[i][1], oper[i][2]))
-            
         else:
             results.append(_compound(amount, years, oper[i][1], oper[i][2]))
     print(max(results))
