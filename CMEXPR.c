@@ -1,10 +1,3 @@
-/* ACM International Collegiate Programming Contest
-   Central European Regional Contest 2000
-   
-   Problem E - Complicated Expressions
-   Pavel Kos
-*/
-
 #include <stdio.h>
 
 
