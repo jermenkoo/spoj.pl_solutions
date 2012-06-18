@@ -41,7 +41,7 @@ int main()
         map<int,int>::iterator it;
         for(it = m.begin(); it != m.end(); it++)
         {
-            int a = exp( (it->first), it->second + 1) - 1;
+            int a = exp( (it -> first), it->second + 1) - 1;
             a = a / (it -> first - 1);
             p *= a;
         }
