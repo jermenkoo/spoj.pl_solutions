@@ -9,7 +9,5 @@ while True:
     try:
         vstup = int(input())
         print(exchange(vstup))
-    except Exception:
-        break
-    except IOError:
+    except:
         break

@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 #define MAX_SIZE 512
 
 struct Node_t

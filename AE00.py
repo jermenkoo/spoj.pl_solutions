@@ -11,5 +11,3 @@ while True:
         square = square + i
     i = i + 1
 print(result)
-    
-    

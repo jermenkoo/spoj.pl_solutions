@@ -15,5 +15,5 @@ int main()
         sol = floor(sol);
         printf("%llu\n", sol);
     }
-return 0;
+    return 0;
 }
