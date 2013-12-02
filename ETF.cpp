@@ -4,22 +4,22 @@
 
 using namespace std;
 
-int phi[MAXN + 1], prime[MAXN/10], sz;
+int phi[MAXN + 1], prime[MAXN / 10], sz;
 bitset <MAXN + 1> mark;
 
 int main() {
-    for (int i = 2; i <= MAXN; i++ ){
-        if(!mark[i]){
-            phi[i] = i-1;
-            prime[sz++]= i;
+    for (int i = 2; i <= MAXN; i++) {
+        if (!mark[i]) {
+            phi[i] = i - 1;
+            prime[sz++] = i;
         }
-        for (int j=0; j<sz && prime[j]*i <= MAXN; j++ ){
-            mark[prime[j]*i]=1;
-            if(i%prime[j]==0){
-                phi[i*prime[j]] = phi[i]*prime[j];
+        for (int j = 0; j < sz && prime[j] * i <= MAXN; j++) {
+            mark[prime[j] * i] = 1;
+            if(i % prime[j] == 0){
+                phi[i * prime[j]] = phi[i] * prime[j];
                 break;
             }
-            else phi[i*prime[j]] = phi[i]*(prime[j]-1);
+            else phi[i * prime[j]] = phi[i] * (prime[j] - 1);
         }
     }
 
