@@ -16,7 +16,7 @@ int main(void){
 			line[32] = 0;
 			++m[line];
 		}
-		map < string, int >::iterator it;
+		map <string, int>::iterator it;
 		for(it = m.begin(); it != m.end(); it++)
 			printf("%s%d\n", it->first.c_str(), it->second);
 		if(t) puts("");
