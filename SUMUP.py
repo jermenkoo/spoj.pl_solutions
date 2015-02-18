@@ -1,4 +1,1 @@
-def S(n): return (1/2)*(1-(1/(n**2+n+1)))
-
-for t in range(int(input())):
-    print("{0:.5f}".format(S(int(input()))))
+u=input;exec("t=int(u());y=t*t+t;print('%.5f'%(y/2/(y+1)));"*int(u()))
