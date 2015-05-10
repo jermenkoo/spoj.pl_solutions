@@ -1,1 +1,3 @@
-u=input;exec("t=u();y=t*t+t;print'%.5f'%(.5*y/-~y);"*u())
+u=input;exec"t=u();print'%.5f'%(.5-.5/(t*t-~t));"*u()
+
+u=input;exec"t=u();print'%.5f'%(.5-.5/(t*t-~t));"*u()
